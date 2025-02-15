@@ -16,7 +16,8 @@ export default function Experience() {
           📰 Experiences
         </h2>
         <h2 className="mt-2 text-3xl font-bold text-neutral sm:text-4xl mb-2">
-          Professional Experiences That <br /> Define My Journey
+          Professional Experiences That <br /> Define{" "}
+          <span className="text-primary">My Journey</span>
         </h2>
 
         <br />
