@@ -8,7 +8,7 @@ export default function Skills() {
           📰 Skills
         </h2>
         <h2 className="mt-2 text-3xl font-bold text-neutral sm:text-4xl mb-2">
-          <span className="text-prima">Technologies and Tools</span> I Specialize In
+          <span className="text-primary">Technologies and Tools</span> I Specialize In
         </h2>
 
         <div className="mt-6 flex flex-col gap-4">

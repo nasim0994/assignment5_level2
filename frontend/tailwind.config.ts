@@ -20,7 +20,7 @@ export default {
         },
         neutral: "hsl(var(--neutral))",
         "neutral-content": "hsl(var(--neutral-content))",
-        "base-100": "hsl(var(--base-100))",
+        "base-100": "#fff",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

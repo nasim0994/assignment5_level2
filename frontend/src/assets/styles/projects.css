@@ -1,0 +1,128 @@
+.project_stack_card {
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @apply h-[600px] md:h-96;
+}
+
+.project_stack_card.odd {
+  background: var(--primary);
+}
+.project_stack_card.even {
+  background: var(--secondary);
+}
+
+.project_img {
+  background-color: hsla(0, 0%, 46%, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+  overflow: hidden;
+}
+
+.project_img img {
+  height: auto;
+  width: 100%;
+  transform: translateY(0%);
+  transition: transform 8s ease-in-out 0s;
+}
+
+.project_img img:hover {
+  transform: translateY(-85%);
+}
+
+.project_content {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project_stack_card.even .project_index {
+  top: 0px;
+  right: 15px;
+}
+
+.project_stack_card.odd .project_index {
+  top: 0px;
+  left: 15px;
+}
+
+.project_stack_card .links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project_stack_card .links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px !important;
+  padding: 8px 15px;
+  border-radius: 6px;
+
+  transition: all 0.5s ease;
+}
+
+.project_stack_card .links a:nth-child(1) {
+  background: #fff;
+  color: var(--secondary);
+}
+
+.project_stack_card .links a:nth-child(2) {
+  background: var(--primary);
+}
+
+.project_stack_card.odd .links a:nth-child(2) {
+  background: var(--secondary);
+}
+
+.project_stack_card .links a:hover:nth-child(1) {
+  background: var(--primary);
+  color: #fff;
+}
+.project_stack_card .links a:hover:nth-child(2) {
+  background: #fff;
+  color: var(--secondary);
+}
+
+@media only screen and (min-width: 1024px) {
+  .project_stack_card {
+    flex-direction: row;
+    height: 380px;
+  }
+
+  .project_stack_card.odd {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .project_stack_card.even {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .project_img {
+    width: 50%;
+  }
+
+  .project_content {
+    width: 50%;
+  }
+
+  .project_stack_card .links {
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .project_stack_card .links a {
+    font-size: 18px;
+  }
+}

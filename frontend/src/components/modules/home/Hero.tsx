@@ -28,7 +28,7 @@ export default function Hero() {
             </div>
 
             <h3 className="w-max rounded-xl bg-base-100/10 px-3 py-1 text-xs text-base-100">
-              🍪 Learn, Code, Create
+              🖥️ MERN Stack Developer
             </h3>
 
             <h2 className="my-4 text-2xl font-bold sm:text-5xl">
