@@ -1,0 +1,17 @@
+span.vertical-timeline-element-date {
+  color: var(--base-100);
+}
+
+@media only screen and (min-width: 1208px) {
+  span.vertical-timeline-element-date {
+    color: var(--secondary);
+  }
+}
+
+.vertical-timeline {
+  padding-top: 0px !important;
+}
+
+.vertical-timeline::before {
+  border-left: 3px solid var(--secondary);
+}

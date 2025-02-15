@@ -1,4 +1,5 @@
 "use client";
+import "@/assets/styles/experience.css";
 import { CgWorkAlt } from "react-icons/cg";
 import { MdHomeRepairService } from "react-icons/md";
 import {
@@ -26,11 +27,7 @@ export default function Experience() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "var(--secondary)", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid var(--secondary)" }}
-            date={
-              <span className="text-base-100 xl:text-secondary">
-                October 2023 - Present
-              </span>
-            }
+            date="October 2023 - Present"
             iconStyle={{
               background: "var(--secondary)",
               color: "#fff",
@@ -59,11 +56,7 @@ export default function Experience() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "var(--secondary)", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid var(--secondary)" }}
-            date={
-              <span className="text-base-100 xl:text-secondary">
-                January 2023 - October 2023
-              </span>
-            }
+            date="January 2023 - October 2023"
             iconStyle={{
               background: "var(--secondary)",
               color: "#fff",
@@ -91,11 +84,7 @@ export default function Experience() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "var(--secondary)", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid var(--secondary)" }}
-            date={
-              <span className="text-base-100 xl:text-secondary">
-                12-2020 - 01-2022 Remote(USA Buyer)
-              </span>
-            }
+            date="12-2020 - 01-2022 Remote(USA Buyer)"
             iconStyle={{
               background: "var(--secondary)",
               color: "#fff",
