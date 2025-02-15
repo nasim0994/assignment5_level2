@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  @apply h-[600px] md:h-96;
+  @apply h-[800px] lg:h-96;
 }
 
 .project_stack_card.odd {
@@ -125,4 +125,8 @@
   .project_stack_card .links a {
     font-size: 18px;
   }
+}
+
+.feature_project .project_content p {
+  color: var(--neutral-content);
 }
