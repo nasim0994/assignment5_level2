@@ -1,3 +1,4 @@
+import Contact from "@/components/modules/home/contact/Contact";
 import Experience from "@/components/modules/home/Experience";
 import FeatureProject from "@/components/modules/home/FeatureProject";
 import Hero from "@/components/modules/home/Hero";
@@ -12,6 +13,7 @@ export default function HomePage() {
       <FeatureProject />
       <Skills />
       <Projects />
+      <Contact/>
     </>
   );
 }

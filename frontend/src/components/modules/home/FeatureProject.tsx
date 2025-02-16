@@ -16,7 +16,7 @@ const project = {
 
 export default function FeatureProject() {
   return (
-    <section className="py-10 md:py-16">
+    <section className="py-5">
       <div className="container">
         <h2 className="w-max rounded-xl bg-secondary/10 px-3 py-1 text-xs text-secondary">
           📰 Feature Projects

@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2">
               <Image
-                src="/na.jpg"
+                src="/nasim.png"
                 alt=""
                 className="w-10 h-10 rounded-full"
                 width={500}
