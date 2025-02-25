@@ -6,14 +6,12 @@ import Projects from "@/components/modules/home/Projects";
 import Skills from "@/components/modules/home/Skills";
 
 export default function HomePage() {
-  return (
-    <>
-      <Hero />
-      <Experience />
-      <FeatureProject />
-      <Skills />
-      <Projects />
-      <Contact/>
-    </>
-  );
+    return <>
+        <Hero/>
+        <Experience/>
+        <FeatureProject/>
+        <Skills/>
+        <Projects/>
+        <Contact/>
+    </>;
 }

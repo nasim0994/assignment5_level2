@@ -9,6 +9,8 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 export default function Experience() {
+
+
   return (
     <section className="py-10 md:py-16">
       <div className="container">
@@ -22,6 +24,8 @@ export default function Experience() {
 
         <br />
         <br />
+
+
 
         <VerticalTimeline>
           <VerticalTimelineElement
