@@ -9,6 +9,12 @@ import { IUser } from '../user/userInterface';
 
 export const createUserService = async (data: IUser) => {
   const { name, email, password } = data;
+  // checking if the email is already exist
+  const isExist = await User.findOne({ email });
+  if (isExist) {
+    throw new AppError(httpStatus.CONFLICT, 'This email is already exist !');
+  }
+
   const result = await User.create({
     name,
     email,

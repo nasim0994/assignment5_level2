@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { AiOutlineMenu } from "react-icons/ai";
 import ActiveLink from "../ActiveLink";
+import ThemeToggle from "@/components/shared/ThemeToggle";
+import IUser from "@/components/shared/icons/IUser";
 
 export default function Header() {
   const pathname = usePathname();
@@ -94,6 +96,14 @@ export default function Header() {
                 </li>
                 <li>
                   <ActiveLink href="/contact">Contact</ActiveLink>
+                </li>
+                <li>
+                  <ThemeToggle />
+                </li>
+                <li>
+                  <Link href="/login">
+                    <IUser height={25} width={25} color="#fff"/>
+                  </Link>
                 </li>
               </ul>
             </nav>

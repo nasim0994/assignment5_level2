@@ -67,14 +67,6 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
 
 html {
   scroll-behavior: smooth;
@@ -90,6 +82,10 @@ body {
 h2 {
   font-family: "Space Grotesk", sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+button:focus {
+  outline: none !important;
 }
 
 .container {
@@ -169,4 +165,15 @@ input {
 
 input:focus-visible {
   box-shadow: none !important;
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }

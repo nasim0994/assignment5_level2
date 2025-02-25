@@ -2,7 +2,7 @@
   border-radius: 16px;
   background: var(--secondary);
   padding: 6px 16px;
-  color: var(--base-100);
+  color: #fff;
 }
 
 @media only screen and (max-width: 640px) {
