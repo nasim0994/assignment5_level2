@@ -28,7 +28,7 @@ export const createProjectController = catchAsync(async (req, res, next) => {
       data: result,
     });
   } catch (error) {
-    if (image) deleteFile(image);
+    if (image) deleteFile(`/project/${image}`);
     next(error);
   }
 });
@@ -71,7 +71,7 @@ export const updateProjectController = catchAsync(async (req, res, next) => {
       data: result,
     });
   } catch (error) {
-    if (image) deleteFile(image);
+    if (image) deleteFile(`/project/${image}`);
     next(error);
   }
 });
