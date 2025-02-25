@@ -22,7 +22,7 @@ export default function Contact() {
         <div className="mt-4 grid md:grid-cols-2 gap-10 bg-secondary/5 border border-secondary rounded px-6 py-10">
           <div className="flex flex-col gap-6">
             <div>
-            <p className="text-neutral-content text-sm opacity">
+            <p className="text-neutral-content text-sm opacity-80">
               Let’s talk about your project! I’m ready to assist you. Whether
               you have questions about web development or design, or you’re
               looking to collaborate on a new project, feel free to send your

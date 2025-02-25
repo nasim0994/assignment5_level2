@@ -22,7 +22,7 @@ export default function ProjectsPage() {
       <div className="container">
         <h2 className="text-center text-3xl font-bold text-neutral sm:text-5xl">
           All Awesome Projects <br /> with{" "}
-          <span className="text-primary">{"<Source Code>"}</span>
+          <span className="text-secondary">{"<Source Code>"}</span>
         </h2>
         <ul className="grid">
           {projects?.map((project, index: number) => (

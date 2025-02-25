@@ -81,7 +81,7 @@ export default function AboutPage() {
             </h2>
 
             <div className="mt-3">
-              My Name is Nasim. I am a professional MERN Stack
+              My Name is Nasim Uddin. I am a professional MERN Stack
               Developer. I have 2.5 years experience as a Front-End Developer.
               As a Junior MERN Stack Developer, I possess an impressive arsenal
               of skills in HTML, CSS, Tailwind CSS , Bootstrap , JavaScript ,

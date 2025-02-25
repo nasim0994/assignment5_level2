@@ -10,22 +10,20 @@ export default function Footer() {
     <footer className="footer_wrap">
       <div className="container">
         <div className="sm:flex justify-between items-center">
-          <div>
-            <div className="flex items-center gap-2">
-              <Image
-                src="/nasim.png"
-                alt=""
-                className="w-10 h-10 rounded-full"
-                width={500}
-                height={500}
-              />
-              <p className="text-gray-300">
-                Copyright © 2023. All rights are reserved
-              </p>
-            </div>
+          <div className="flex items-center gap-2">
+            <Image
+              src="/nasim.png"
+              alt=""
+              className="w-10 h-10 rounded-full"
+              width={500}
+              height={500}
+            />
+            <p className="text-gray-300">
+              Copyright © 2023. All rights are reserved
+            </p>
           </div>
 
-          <div className="mt-6 flex gap-3">
+          <div className="flex gap-3">
             <Link
               href="https://www.linkedin.com/in/mdnasimuddin"
               target="_blank"
