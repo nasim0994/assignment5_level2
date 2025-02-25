@@ -54,7 +54,7 @@ export default function Contact() {
             <div className="flex gap-3">
               <h2>Follow:</h2>
             <Link
-              href="https://github.com/nasim0994"
+              href="https://www.linkedin.com/in/mdnasimuddin"
               target="_blank"
               className="text-2xl hover:-translate-y-1 duration-300 text-primary"
             >

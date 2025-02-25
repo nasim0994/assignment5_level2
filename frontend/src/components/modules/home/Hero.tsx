@@ -43,25 +43,32 @@ export default function Hero() {
 
             <div className="mt-6 flex gap-3">
               <Link
-                href="https://github.com/nasim0994"
+                href="https://www.linkedin.com/in/mdnasimuddin"
                 target="_blank"
-                className="text-[25px] hover:-translate-y-1 duration-300"
+                className="text-[25px] hover:-translate-y-1 duration-300 flex items-center justify-center"
               >
                 <PiLinkedinLogoBold />
               </Link>
               <Link
                 href="https://github.com/nasim0994"
                 target="_blank"
-                className="text-[25px] hover:-translate-y-1 duration-300"
+                className="text-[25px] hover:-translate-y-1 duration-300 flex items-center justify-center"
               >
                 <FiGithub />
               </Link>
               <Link
-                href="https://github.com/nasim0994"
+                href="https://www.facebook.com/nuaimhasannasim"
                 target="_blank"
-                className="text-[25px] hover:-translate-y-1 duration-300"
+                className="text-[25px] hover:-translate-y-1 duration-300 flex items-center justify-center"
               >
                 <FiFacebook />
+              </Link>
+              <Link
+                href="https://drive.google.com/file/d/1clY1nwh6YJUJMR8jJQcq0H9e8_Uf2FeH/view?usp=drive_link"
+                target="_blank"
+                className="text-sm border rounded-full px-5 py-1.5 hover:bg-secondary hover:border-secondary duration-300"
+              >
+                View Resume
               </Link>
             </div>
           </div>
