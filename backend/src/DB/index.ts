@@ -4,7 +4,7 @@ import { User } from '../modules/user/userModel';
 const defaultAdmin: IUser = {
   name: 'Admin',
   email: 'admin@gmail.com',
-  password: 'assignment4',
+  password: 'assignment5',
   role: 'admin',
   isBlocked: false,
 };
