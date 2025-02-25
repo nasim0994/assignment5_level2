@@ -5,6 +5,7 @@ import { userRoute } from '../modules/user/userRoute';
 import { adminRoute } from '../modules/admin/adminRoute';
 import { projectRoute } from '../modules/project/projectRoute';
 import { blogRoute } from '../modules/blog/blogRoute';
+import { messageRoute } from '../modules/contactMessage/messageRoute';
 
 const moduleRoutes = [
   {
@@ -26,6 +27,10 @@ const moduleRoutes = [
   {
     path: '/blog',
     route: blogRoute,
+  },
+  {
+    path: '/contact-message',
+    route: messageRoute,
   },
 ];
 
