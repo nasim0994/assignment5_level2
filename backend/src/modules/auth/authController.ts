@@ -5,7 +5,6 @@ import {
   refreshTokenService,
 } from './authService';
 import httpStatus from 'http-status';
-import config from '../../config';
 
 export const createUserController = catchAsync(async (req, res) => {
   const data = req.body;
@@ -22,12 +21,6 @@ export const createUserController = catchAsync(async (req, res) => {
 export const loginUserController = catchAsync(async (req, res) => {
   const result = await loginUserService(req.body);
   const { refreshToken, accessToken } = result;
-
-  res.cookie('refreshToken', refreshToken, {
-    secure: config.NODE_ENV === 'production',
-    httpOnly: true,
-    sameSite: 'none',
-  });
 
   res.status(200).json({
     success: true,
