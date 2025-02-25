@@ -85,6 +85,7 @@ export default function ContactForm() {
                   value={field.value || ""}
                   className="placeholder:text-gray-400 placeholder:text-[13px]"
                   placeholder="Enter your message..."
+                  rows={6}
                 />
               </FormControl>
               <FormMessage className="text-xs font-light" />

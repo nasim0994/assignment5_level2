@@ -27,7 +27,7 @@ export default function Footer() {
 
           <div className="mt-6 flex gap-3">
             <Link
-              href="https://github.com/nasim0994"
+              href="https://www.linkedin.com/in/mdnasimuddin"
               target="_blank"
               className="text-[25px] hover:-translate-y-1 duration-300"
             >
@@ -41,7 +41,7 @@ export default function Footer() {
               <FiGithub />
             </Link>
             <Link
-              href="https://github.com/nasim0994"
+              href="https://www.facebook.com/nuaimhasannasim"
               target="_blank"
               className="text-[25px] hover:-translate-y-1 duration-300"
             >
