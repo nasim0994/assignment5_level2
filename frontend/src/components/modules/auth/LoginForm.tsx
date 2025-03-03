@@ -1,6 +1,6 @@
 "use client";
+import { AiFillGithub } from "react-icons/ai";
 import { ImFacebook } from "react-icons/im";
-import { FcGoogle } from "react-icons/fc";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import {
@@ -18,6 +18,7 @@ import { loginZodValidation } from "./loginValidation";
 import { AiFillEyeInvisible } from "react-icons/ai";
 import { AiFillEye } from "react-icons/ai";
 import { useState } from "react";
+import { signIn } from "next-auth/react";
 
 export default function LoginForm() {
   const [showPass, setShowPass] = useState(false);
@@ -62,7 +63,7 @@ export default function LoginForm() {
               <FormControl>
                 <div className="relative">
                   <Input
-                    type={showPass ? 'text' : 'password'}
+                    type={showPass ? "text" : "password"}
                     {...field}
                     value={field.value || ""}
                     className="rounded-full placeholder:text-gray-400 placeholder:text-[13px]"
@@ -72,9 +73,11 @@ export default function LoginForm() {
                     onClick={() => setShowPass(!showPass)}
                     className="absolute top-3 right-3 cursor-pointer"
                   >
-                    {
-                        showPass ? <AiFillEyeInvisible className="text-neutral-content" /> : <AiFillEye className="text-neutral-content" />
-                    }
+                    {showPass ? (
+                      <AiFillEyeInvisible className="text-neutral-content" />
+                    ) : (
+                      <AiFillEye className="text-neutral-content" />
+                    )}
                   </span>
                 </div>
               </FormControl>
@@ -108,27 +111,34 @@ export default function LoginForm() {
         >
           Sign In
         </Button>
-
-        <div className="flex flex-col gap-3 mt-1">
-          <p className="text-sm text-center text-neutral">Or Sign In with</p>
-
-          <div className="flex item-center justify-center gap-2">
-            <button className="w-10 h-10 rounded-full border-2 border-gray-100 flex items-center justify-center">
-              <FcGoogle className="text-xl" />
-            </button>
-            <button className="w-10 h-10 rounded-full border-2 border-gray-100 flex items-center justify-center">
-              <ImFacebook className="text-lg text-blue-600" />
-            </button>
-          </div>
-        </div>
-
-        <div className="flex items-center justify-center text-xs gap-1">
-          <p className="text-neutral-content">Already have an account?</p>
-          <Link href="/register" className="text-neutral font-semibold">
-            Sign Up
-          </Link>
-        </div>
       </form>
+
+      <div className="flex flex-col gap-3 mt-5">
+        <p className="text-sm text-center text-neutral">Or Sign In with</p>
+
+        <div className="flex item-center justify-center gap-2">
+          <button
+            onClick={() =>
+              signIn("github", {
+                callbackUrl: "",
+              })
+            }
+            className="w-10 h-10 rounded-full border-2 border-gray-100 flex items-center justify-center"
+          >
+            <AiFillGithub className="text-xl" />
+          </button>
+          <button className="w-10 h-10 rounded-full border-2 border-gray-100 flex items-center justify-center">
+            <ImFacebook className="text-lg text-blue-600" />
+          </button>
+        </div>
+      </div>
+
+      <div className="mt-4 flex items-center justify-center text-xs gap-1">
+        <p className="text-neutral-content">Already have an account?</p>
+        <Link href="/register" className="text-neutral font-semibold">
+          Sign Up
+        </Link>
+      </div>
     </Form>
   );
 }
